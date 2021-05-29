@@ -26,7 +26,7 @@ function identifyCharset(text, charset) {
 function translateText(text, srcCharset, dstCharset){
     let result = '';
     for (let i = 0; i <= text.length - 1; i++){
-        j = srcCharset.indexOf(text[i]);
+        let j = srcCharset.indexOf(text[i]);
         if (j >= 0) {
             result += dstCharset[j];
         } else {
