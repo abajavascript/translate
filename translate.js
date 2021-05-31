@@ -1,3 +1,9 @@
+function translateOnClick(){
+    incorrectText.value = window.translate(incorrectText.value);
+    var p = document.createElement('p');
+    p.innerText = incorrectText.value;
+    historyLog.appendChild(p);
+}
 
 function translate(s){
     let eng = 'qwertyuiop[]\\asdfghjkl;\'zxcvbnm,./';
